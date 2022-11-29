@@ -142,7 +142,6 @@ username.addEventListener(
 username.addEventListener(
     "keydown",
     (e) => {
-        console.log(e)
         context.font = "800 36px Montserrat"
         context.fillStyle = "#B20018"
         if (e.keyCode === 9) {
