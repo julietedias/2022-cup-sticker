@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Figurinha da Copa 2022 | Juliete Dias</title>
+    </head>
+    <body>
+        <h1 class="title">Crie sua figurinha da Copa 2022</h1>
+
+        <div class="container">
+            <div class="step-by-step">
+                <h3 class="choose-photo-title">1. Escolha uma foto</h3>
+                <p class="choose-photo-text">
+                    Escolha uma foto em que sua imagem esteja centralizada.
+                </p>
+                <label class="photo" for="photo-input">
+                    <small class="choose-photo-placeholder"
+                        >Escolha sua foto</small
+                    >
+                    <canvas
+                        id="photo"
+                        class="photo-canvas"
+                        width="390"
+                        height="560"
+                    ></canvas>
+                </label>
+                <input type="file" name="photo-input" id="photo-input" />
+
+                <div>
+                    <h3 class="generate-preview-title">
+                        2. Gere uma prévia da sua figurinha
+                    </h3>
+                    <p class="generate-preview-text">
+                        Veja como vai ficar sua figurinha e, se necessário,
+                        troque sua foto.
+                    </p>
+                    <button
+                        class="button preview-button"
+                        id="generate-preview-button"
+                        type="button"
+                    >
+                        Gerar prévia
+                    </button>
+                    <button
+                        class="button restart-button"
+                        id="restart-photo"
+                        type="button"
+                    >
+                        Trocar foto
+                    </button>
+                </div>
+
+                <div class="insert-name">
+                    <div class="name">
+                        <form>
+                            <h3 class="insert-name-title">
+                                3. Digite seu nome (em MAIÚSCULO)
+                            </h3>
+                            <p class="insert-name-text">
+                                Pressione as setas do teclado (◀ e ▶) antes de
+                                digitar o nome, para controlar a posição na
+                                figurinha.
+                            </p>
+                            <input
+                                id="username"
+                                type="text"
+                                placeholder="Digite seu nome aqui"
+                                class="username"
+                            />
+                            <input
+                                class="button reset-button"
+                                type="reset"
+                                id="clear-username"
+                                value="Limpar nome"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview">
+                <h3 class="preview-title">Prévia</h3>
+                <div>
+                    <canvas id="canvas-image" width="390" height="560">
+                    </canvas>
+
+                    <div class="download-and-restart-button">
+                        <button
+                            class="button download-button"
+                            id="download-button"
+                            type="button"
+                        >
+                            Baixar figurinha
+                        </button>
+                        <button
+                            class="button restart-button"
+                            id="start-over"
+                            type="button"
+                        >
+                            Começar de novo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Desenvolvido por Juliete Dias | Design por Bia Franzoi</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

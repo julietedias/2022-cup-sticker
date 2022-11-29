@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: "Montserrat";
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(0deg, #008c69 0%, #290680 100%);
+    padding: 75px;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.step-by-step {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-photo-title {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.choose-photo-text {
+    width: 420px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.insert-name {
+    margin-bottom: 30px;
+}
+
+.username {
+    height: 45px;
+}
+
+.choose-photo-placeholder {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-left: 100%;
+    font-size: 16px;
+    color: #303030;
+}
+
+.button {
+    width: fit-content;
+    height: 45px;
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: #280b7f;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.generate-preview-title {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.generate-preview-text {
+    width: 420px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.preview-button {
+    margin-bottom: 30px;
+}
+
+.preview-button:hover {
+    background-color: #f5f5f5;
+}
+
+.insert-name-title {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.insert-name-text {
+    width: 420px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.reset-button {
+    background: transparent;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.download-and-restart-button {
+    margin-top: 20px;
+}
+
+.download-button {
+    font-size: 16px;
+    color: #290680;
+    background-color: #ffc001;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #f2b601;
+}
+
+.restart-button {
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.preview {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#canvas-image {
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    float: left;
+    cursor: text;
+}
+
+input[type="text"] {
+    border-radius: 50px;
+    border: 1px solid #dddddd;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+#photo-input {
+    display: none;
+}
+
+.photo {
+    width: 400px;
+    height: 100px;
+    aspect-ratio: 16/9;
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaaaaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.photo:hover {
+    color: #777777;
+    background: #cccccc;
+}
+
+.photo:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eeeeee;
+}
+
+.photo:focus {
+    color: #777777;
+    background: #cccccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-img {
+    max-width: 100%;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    margin: 100px 0 0;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
